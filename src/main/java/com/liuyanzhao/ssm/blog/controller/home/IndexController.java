@@ -117,8 +117,6 @@ public class IndexController {
     @RequestMapping("/500")
     public String ServerError(@RequestParam(required = false) String message, Model model) {
         model.addAttribute("message", message);
-        System.out.println("66666");
-        System.out.println("66666");
         return "Home/Error/500";
     }
 
