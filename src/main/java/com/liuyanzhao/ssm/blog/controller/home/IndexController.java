@@ -117,6 +117,7 @@ public class IndexController {
     @RequestMapping("/500")
     public String ServerError(@RequestParam(required = false) String message, Model model) {
         model.addAttribute("message", message);
+        System.out.println("我上传到了GitHub上");
         return "Home/Error/500";
     }
 
